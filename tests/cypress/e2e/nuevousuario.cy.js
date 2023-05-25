@@ -22,10 +22,16 @@ function navegarLogin() {
 //Nuevo usuario
 describe('guardarUsuarios', () => {
 
-    it('guardar usuarios', () => {
+    it('iniciar sesion', () => {
         navegarLogin();
+    });
+
+    it('entrar apartado creacion de usuarios', () => {
         cy.xpath("//div[@id='menuForm:menuPuntoMenu']/ul/li[34]/a").click();
         cy.xpath("//button[@id='formListadoUsuarios:nuevoUsuario']/span[2]").click();
+    });
+
+    it('creacion usuario', () => {
         cy.xpath("//input[@id='formFormularioUsuarios:nombre']").type("Jose");
         cy.xpath("//input[@id='formFormularioUsuarios:primerApellido']").type("Palos");
         cy.xpath("//input[@id='formFormularioUsuarios:segundoApellido']").type("Guiso");
@@ -36,6 +42,6 @@ describe('guardarUsuarios', () => {
         cy.xpath("//input[@id='formFormularioUsuarios:telefono_input']").type("602020220");
         cy.xpath("//input[@id='formFormularioUsuarios:login']").type("jose.palos");
         cy.xpath("//button[@id='formFormularioUsuarios:guardar']/span[2]").click();
+    });  
 
-    });
 });
