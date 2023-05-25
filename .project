@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+<<<<<<< HEAD
+	<name>ctpda-crud-cypress_nuevo</name>
+=======
+	<name>ctpda-crud-cypress2</name>
+>>>>>>> branch 'jpp' of http://143.47.59.212:8020/formacion/ctpda-crud-cypress.git
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
+</projectDescription>
